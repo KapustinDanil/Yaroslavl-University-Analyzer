@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    background: #f1f1f1; 
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/1_qiEAfW5yEHOBUJ9u-NhBhA.jpeg);
+    color: ghostwhite;
+    padding: 40px 0 40px 0;
+}
+table {
+    margin-top: 10px;
+    width: 100%; /* Ширина таблицы */
+    background:rgb(170, 169, 169); /* Цвет фона таблицы */
+    color: #0f0f0f; /* Цвет текста */
+    border-spacing: 3px; /* Расстояние между ячейками */
+}
+
+td, th {
+    border-radius: 3px;
+    background: #f1f1f1; /* Цвет фона ячеек */
+    padding: 5px; /* Поля вокруг текста */
+    text-align: center;
+    font-weight: 900;
+   }
