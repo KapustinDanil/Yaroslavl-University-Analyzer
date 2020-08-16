@@ -4,55 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    
-    <script language="JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
-    <script language="JavaScript">
-         
-        var json = $.getJSON('main-data.json', function(json) {
-
-    console.log(json["ISPU0"][0].ISPU); // this will show the info it in firebug console
-
-    var tbody=document.querySelector("tbody"),tr = "",td = "";
-         for (let i = 0; i < 1293; i++) {   
-             tr=''
-             td='' 
-             td += "<td>" + json["YSU0"][i].YSU + "</td>";
-             td += "<td>" + json["YSTU0"][i].YSTU + "</td>";
-            td += "<td>" + json["KGU0"][i].KGU + "</td>";
-           td += "<td>" + json["ISPU0"][i].ISPU + "</td>";
-         
-         tr += "<tr>" + td + "</tr>";
-         tbody.innerHTML += tr;
-       }
-         
-
-        });
-        
-        </script>
-
-       
-        
-        
-
+    <script language="JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>  
     <title>Yaroslavl University Analyzer</title> 
 </head>
 <body>
     <header>
         <h1>Yaroslavl University Analyzer</h1>
     </header>
-    <table id="myTable">
+    <table id="myTable" width='25%' align="left">
         <thead>
             <tr>
-                <th>ФИО абитуриента в ЯрГУ</th>
-                <th>Наличие в ЯГТУ</th>
-                <th>Наличие в КГУ</th>
-                <th>Наличие в ИГЭУ</th>
+                <th><strong>ФИО абитуриента в ЯрГУ</strong></th>
+             
             </tr>           
         </thead>
         <tbody>
 
         </tbody>
     </table>
-    
+    <table id="myTable-1" width='15%' align="left">
+        <thead>
+            <tr>
+                <th><strong>ЯГТУ</strong></th>
+             
+            </tr>           
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <table id="myTable-2" width='15%' align="left">
+        <thead>
+            <tr>
+                <th><strong>КГУ</strong></th>
+             
+            </tr>           
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <table id="myTable-3" width='15%' align="left">
+        <thead>
+            <tr>
+                <th><strong>ИГЭУ</strong></th>            
+            </tr>           
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <table id="myTable-4" width='15%' align="left">
+        <thead>
+            <tr>
+                <th><strong>ЯГМУ</strong></th>            
+            </tr>           
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <table id="myTable-5" width='15%' align="left">
+        <thead>
+            <tr>
+                <th><strong>Агрегатор</strong></th>            
+            </tr>           
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+    <script language="JavaScript" src='./JS/YSU.js'></script>
+    <script language="JavaScript" src="./JS/YSTU.js"></script>
+    <script language="JavaScript" src="./JS/KGU.js"></script>
+    <script language="JavaScript" src="./JS/ISPU.js"></script>
+    <script language="JavaScript" src="./JS/YSMU.js"></script>    
+    <script language="JavaScript" src="./JS/Agregator.js"></script> 
+
 </body>
 </html>
