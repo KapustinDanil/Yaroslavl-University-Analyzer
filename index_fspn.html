@@ -13,12 +13,12 @@
         <h1>Yaroslavl University Analyzer</h1>
 
         <nav class="tabs">
-            <a  href="./index.html" class="tabs-item tabs-item-active">Математический факультет</a>
+            <a href="./index.html" class="tabs-item">Математический факультет</a>
             <a  href="./index_ivt.html" class="tabs-item">ИВТ</a>
-            <a  href="./index_fiz.html" class="tabs-item">Физический факультет</a>
+            <a href="./index_fiz.html" class="tabs-item">Физический факультет</a>
             <a href="./index_istfak.html" class="tabs-item">Исторический факультет</a>
             <a href="./index_bio.html" class="tabs-item">Биологический факультет</a>
-            <a href="./index_fspn.html" class="tabs-item">ФСПН</a>
+            <a visited href="./index_fspn.html" class="tabs-item tabs-item-active">ФСПН</a>
             
         </nav>
 
@@ -88,89 +88,89 @@
         </tbody>
     </table>
 </div> 
-<script language="JavaScript" >
-    var json = $.getJSON('main-data-math.json', function(json) {
+    <script language="JavaScript" >
+        var json = $.getJSON('main-data-fspn.json', function(json) {
 
 console.log(json["YSU0"][0].YSU); // this will show the info it in firebug console
 var tbody=document.getElementById("myTable"),tr = "",td = "";
- for (let i = 0; i < 531; i++) {   
-     tr=''
-     td='' 
-     td += "<td>" + json["YSU0"][i].YSU + "</td>";
- tr += "<tr>" + td + "</tr>";
- tbody.innerHTML += tr;
-}
- 
-});  
-</script>
-<script defer language="JavaScript" >
-    var json = $.getJSON('main-data-math.json', function(json) {
+     for (let i = 0; i < 745; i++) {   
+         tr=''
+         td='' 
+         td += "<td>" + json["YSU0"][i].YSU + "</td>";
+     tr += "<tr>" + td + "</tr>";
+     tbody.innerHTML += tr;
+   }
+     
+    });  
+    </script>
+    <script defer language="JavaScript" >
+        var json = $.getJSON('main-data-fspn.json', function(json) {
 
 var tbody=document.getElementById("myTable-1"),tr = "",td = "";
- for (let i = 0; i < 531; i++) {   
-     tr=''
-     td='' 
-     td += "<td>" + json["YSTU0"][i].YSTU + "</td>";
- tr += "<tr>" + td + "</tr>";
- tbody.innerHTML += tr;
-}
- 
-});    
-</script>
-<script defer language="JavaScript" >
-var json = $.getJSON('main-data-math.json', function(json) {
-    var tbody=document.getElementById("myTable-2"),tr = "",td = "";
-         for (let i = 0; i < 531; i++) {   
-             tr=''
-             td='' 
-             td += "<td>" + json["KGU0"][i].KGU + "</td>";
-         tr += "<tr>" + td + "</tr>";
-         tbody.innerHTML += tr;
-       }
-         
-        });
-</script>
-<script defer language="JavaScript" >
-    var json = $.getJSON('main-data-math.json', function(json) {
+     for (let i = 0; i < 745; i++) {   
+         tr=''
+         td='' 
+         td += "<td>" + json["YSTU0"][i].YSTU + "</td>";
+     tr += "<tr>" + td + "</tr>";
+     tbody.innerHTML += tr;
+   }
+     
+    });    
+    </script>
+    <script defer language="JavaScript" >
+    var json = $.getJSON('main-data-fspn.json', function(json) {
+        var tbody=document.getElementById("myTable-2"),tr = "",td = "";
+             for (let i = 0; i < 745; i++) {   
+                 tr=''
+                 td='' 
+                 td += "<td>" + json["KGU0"][i].KGU + "</td>";
+             tr += "<tr>" + td + "</tr>";
+             tbody.innerHTML += tr;
+           }
+             
+            });
+    </script>
+    <script defer language="JavaScript" >
+        var json = $.getJSON('main-data-fspn.json', function(json) {
 
 var tbody=document.getElementById("myTable-3"),tr = "",td = "";
- for (let i = 0; i < 531; i++) {   
-     tr=''
-     td='' 
-     td += "<td>" + json["ISPU0"][i].ISPU + "</td>";
- tr += "<tr>" + td + "</tr>";
- tbody.innerHTML += tr;
-}
- 
-});     
-</script>
-<script defer language="JavaScript" >
-        var json = $.getJSON('main-data-math.json', function(json) {
-    var tbody=document.getElementById("myTable-4"),tr = "",td = "";
-         for (let i = 0; i < 531; i++) {   
-             tr=''
-             td='' 
-             td += "<td>" + json["YSMU0"][i].YSMU + "</td>";
-         tr += "<tr>" + td + "</tr>";
-         tbody.innerHTML += tr;
-       }
-         
-        }); 
-</script>    
-<script defer language="JavaScript" >
-    var json = $.getJSON('main-data-math.json', function(json) {
+     for (let i = 0; i < 745; i++) {   
+         tr=''
+         td='' 
+         td += "<td>" + json["ISPU0"][i].ISPU + "</td>";
+     tr += "<tr>" + td + "</tr>";
+     tbody.innerHTML += tr;
+   }
+     
+    });     
+    </script>
+    <script defer language="JavaScript" >
+            var json = $.getJSON('main-data-fspn.json', function(json) {
+        var tbody=document.getElementById("myTable-4"),tr = "",td = "";
+             for (let i = 0; i < 745; i++) {   
+                 tr=''
+                 td='' 
+                 td += "<td>" + json["YSMU0"][i].YSMU + "</td>";
+             tr += "<tr>" + td + "</tr>";
+             tbody.innerHTML += tr;
+           }
+             
+            }); 
+    </script>    
+    <script defer language="JavaScript" >
+        var json = $.getJSON('main-data-fspn.json', function(json) {
 
 var tbody=document.getElementById("myTable-5"),tr = "",td = "";
- for (let i = 0; i < 531; i++) {   
-     tr=''
-     td='' 
-     td += "<td>" + json["Agregator0"][i].agregator + "</td>";
- tr += "<tr>" + td + "</tr>";
- tbody.innerHTML += tr;
-}
- 
-});        
-</script> 
+     for (let i = 0; i < 745; i++) {   
+         tr=''
+         td='' 
+         td += "<td>" + json["Agregator0"][i].agregator + "</td>";
+     tr += "<tr>" + td + "</tr>";
+     tbody.innerHTML += tr;
+   }
+     
+    });        
+    </script> 
 
 </body>
 </html>
