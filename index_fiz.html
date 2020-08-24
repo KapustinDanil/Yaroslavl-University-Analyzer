@@ -88,89 +88,13 @@
         </tbody>
     </table>
 </div> 
-    <script language="JavaScript" >
-        var json = $.getJSON('main-data-fiz.json', function(json) {
-
-console.log(json["YSU0"][0].YSU); // this will show the info it in firebug console
-var tbody=document.getElementById("myTable"),tr = "",td = "";
-     for (let i = 0; i < 407; i++) {   
-         tr=''
-         td='' 
-         td += "<td>" + json["YSU0"][i].YSU + "</td>";
-     tr += "<tr>" + td + "</tr>";
-     tbody.innerHTML += tr;
-   }
-     
-    });  
-    </script>
-    <script defer language="JavaScript" >
-        var json = $.getJSON('main-data-fiz.json', function(json) {
-
-var tbody=document.getElementById("myTable-1"),tr = "",td = "";
-     for (let i = 0; i < 407; i++) {   
-         tr=''
-         td='' 
-         td += "<td>" + json["YSTU0"][i].YSTU + "</td>";
-     tr += "<tr>" + td + "</tr>";
-     tbody.innerHTML += tr;
-   }
-     
-    });    
-    </script>
-    <script defer language="JavaScript" >
-    var json = $.getJSON('main-data-fiz.json', function(json) {
-        var tbody=document.getElementById("myTable-2"),tr = "",td = "";
-             for (let i = 0; i < 407; i++) {   
-                 tr=''
-                 td='' 
-                 td += "<td>" + json["KGU0"][i].KGU + "</td>";
-             tr += "<tr>" + td + "</tr>";
-             tbody.innerHTML += tr;
-           }
-             
-            });
-    </script>
-    <script defer language="JavaScript" >
-        var json = $.getJSON('main-data-fiz.json', function(json) {
-
-var tbody=document.getElementById("myTable-3"),tr = "",td = "";
-     for (let i = 0; i < 407; i++) {   
-         tr=''
-         td='' 
-         td += "<td>" + json["ISPU0"][i].ISPU + "</td>";
-     tr += "<tr>" + td + "</tr>";
-     tbody.innerHTML += tr;
-   }
-     
-    });     
-    </script>
-    <script defer language="JavaScript" >
-            var json = $.getJSON('main-data-fiz.json', function(json) {
-        var tbody=document.getElementById("myTable-4"),tr = "",td = "";
-             for (let i = 0; i < 407; i++) {   
-                 tr=''
-                 td='' 
-                 td += "<td>" + json["YSMU0"][i].YSMU + "</td>";
-             tr += "<tr>" + td + "</tr>";
-             tbody.innerHTML += tr;
-           }
-             
-            }); 
-    </script>    
-    <script defer language="JavaScript" >
-        var json = $.getJSON('main-data-fiz.json', function(json) {
-
-var tbody=document.getElementById("myTable-5"),tr = "",td = "";
-     for (let i = 0; i < 407; i++) {   
-         tr=''
-         td='' 
-         td += "<td>" + json["Agregator0"][i].agregator + "</td>";
-     tr += "<tr>" + td + "</tr>";
-     tbody.innerHTML += tr;
-   }
-     
-    });        
-    </script> 
+<script id="banner-root" data-cityId="main-data-fiz.json" ></script>
+<script language="JavaScript" src="./JS/YSU.js"></script>
+<script defer language="JavaScript" src="./JS/YSTU.js"></script>
+<script defer language="JavaScript" src="./JS/KGU.js" ></script>
+<script defer language="JavaScript" src="./JS/ISPU.js" ></script>
+<script defer language="JavaScript" src="./JS/YSMU.js" ></script>    
+<script defer language="JavaScript" src="./JS/Agregator.js"></script> 
 
 </body>
 </html>
