@@ -4,8 +4,8 @@ var a=document.getElementById("banner-root").getAttribute("data-cityId");
 var tbody=document.getElementById("myTable-3"),tr = "",td = "";
 var ivan = json.ISPU0.length-1;
  for (let i = 0; i < ivan; i++) {   
-     tr=''
-     td='' 
+     tr='';
+     td='';
      td += "<td>" + json["ISPU0"][i].ISPU + "</td>";
  tr += "<tr>" + td + "</tr>";
  tbody.innerHTML += tr;
